@@ -7,7 +7,8 @@ int main (void)
     b = a%10;
     while (a > 0)
     {
-        if (b == (a%10)) i++;
+        if (b == (a%10)) 
+        i++;
         b = a%10;
         a = a/10;
     }

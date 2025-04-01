@@ -1,22 +1,19 @@
 #include <stdio.h>
 
-void print_binary(int num) {
-    // Базовый случай: если число меньше 2, выводим его
+void reverse_string(int num) {
+    // Если число меньше 2, выводим его
     if (num < 2) {
         printf("%d", num);
         return;
     }
-    
-    // Рекурсивно обрабатываем старшую часть числа
-    print_binary(num / 2);
-    // Выводим текущий остаток (младший бит)
-    printf("%d", num % 2);
+    reverse_string(num / 2); // Рекурсивно обрабатываем старшую часть числа
+    printf("%d", num % 2); // Выводим текущий остаток (младший бит)
 }
 
 int main() {
     int N;
     scanf("%d", &N);
-    print_binary(N);
+    reverse_string(N);
     printf("\n");
     return 0;
 }

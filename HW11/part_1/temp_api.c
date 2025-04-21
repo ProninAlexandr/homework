@@ -44,7 +44,7 @@ void print_all_data(const TemperatureData *data, int size) {
 // Закомментированные заглушки
 /*
 float calculateMonthlyAverage(int month, int year, TemperatureData *data, int dataSize) {
-    return 0.0f; // Заглушка
+    return 0.0f; // Заглушка среднемесячный
 }
-... остальные функции-заглушки ...
+и другие функции, заглушки
 */
